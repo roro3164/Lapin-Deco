@@ -1,0 +1,40 @@
+// Main index
+
+#image-menu {
+  width: 100vw;
+  max-height: 100vh;
+  object-fit: cover;
+}
+
+  h2 {
+      text-align: center;
+      font-family: $font-H2;
+    }
+  
+  #top-selling {
+    @include grid-setup(4, 1, $grid-gap);
+    margin: 20px;
+  }
+  
+      .top-products {
+        @include flex-center(column);
+        
+        background-color: $background-products;
+        padding: 20px;
+      }
+        .top-products img {
+            width: 250px;
+            height: 250px;
+            margin-top: 15px;
+        }
+    
+          .name-top-products {
+            font-family: $font-name-price-product;
+            font-size: $font-size-name-product;
+            font-weight: 600;
+          }
+  
+          .price-top-products {
+            font-size: $font-size-price;
+            font-weight: bold;
+          }

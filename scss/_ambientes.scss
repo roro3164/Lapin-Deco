@@ -1,0 +1,12 @@
+
+.img-ambientes {
+   
+    width: 100vw;
+  max-height: 100vh;
+  object-fit: cover;
+  padding: 20px
+  }
+
+    #ambientes {
+      @include flex-center(column);
+    }

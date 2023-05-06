@@ -1,0 +1,33 @@
+
+header {
+  @include flex-center(row);
+  justify-content: space-between;
+  padding: 20px;
+  background-color: $background-footer-header;
+  
+}
+
+
+
+  #menus {
+    @include flex-center(row);
+    justify-content: space-between;
+  }
+
+      .menu {
+        margin-left: 12px;
+        margin-right: 12px;
+        font-family: $font-nav-header;
+        font-size: $font-size-menu;
+        text-decoration: none;
+        color: $black;
+      }     
+    
+  #button-header {
+    @include flex-center(row);
+    justify-content: space-between;
+  }
+      .search {
+        margin-left: 4px;
+        margin-right: 4px;
+      }

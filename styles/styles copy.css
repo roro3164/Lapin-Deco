@@ -7,6 +7,39 @@ body {
 }
 
 /*header*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+  }
+
+#menus {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+.menu {
+    margin-left: 12px;
+    margin-right: 12px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 22px;
+    text-decoration: none;
+    color: black; 
+}
+
+#button-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+.search {
+    margin-left: 4px;
+    margin-right: 4px;
+}
 
 /*main-index*/
 h2 {
@@ -204,6 +237,7 @@ li a {
 	.products-grid {
         
 		grid-template-columns: repeat(1, 1fr);
+        
         gap: 10px;
         margin-left: 10px;
         margin-right: 10px; 

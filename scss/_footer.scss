@@ -1,0 +1,21 @@
+
+footer {
+    background-color: $background-footer-header;
+    @include flex-center(row);
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin-top: 20px;
+    }
+
+    li {
+        list-style: none;
+        }
+        
+            li a {
+                text-decoration: none;
+                color: black;
+                }
+
+             
+
+   
