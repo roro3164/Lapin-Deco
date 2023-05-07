@@ -1,13 +1,11 @@
 
 header {
   @include flex-center(row);
-  justify-content: space-between;
-  padding: 20px;
+  justify-content: space-evenly;
+  padding: 15px;
   background-color: $background-footer-header;
   
 }
-
-
 
   #menus {
     @include flex-center(row);

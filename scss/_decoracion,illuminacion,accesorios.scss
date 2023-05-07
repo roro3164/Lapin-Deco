@@ -1,4 +1,5 @@
 // Main decoration, illumination, accessories
+
 .selectors {
     @include flex-center(row);
     margin-top: 20px;
@@ -24,8 +25,7 @@ h1 {
 }
 
   .product {
-    @include flex-center(column);
-    background-color: $background-products;
+    @include flex-center(column); 
     padding: 20px;
    
   }

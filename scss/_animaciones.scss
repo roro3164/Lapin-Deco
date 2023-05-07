@@ -1,28 +1,22 @@
-/*pagina*/
-a {
-    transition: transform 0.3s;
-  }
-  
-  a:hover {
-    transform: scale(1.2);
-  }
 
 /*header*/
-nav #menus li a {
-    display: inline-block;
-    padding: 3px;
-    transition: transform 0.3s;
-  }
+#logo {
+  @include hover-transform($hover-scale, $hover-bg-color);
+}
 
-  nav #menus li a:hover {
-    transform: scale(1.2);
-  }
+nav #menus li a {
+  display: inline-block;
+  padding: 3px;
+  @include hover-transform($hover-scale, $hover-bg-color);
+}
 
 /*ambientes*/
 .img-ambientes {
-  transition: transform 0.3s; 
+  @include hover-transform(0.9, $hover-bg-color);
 }
 
-.img-ambientes:hover {
-  transform: scale(0.9);
+/*products*/
+.top-products,.product {
+  @include hover-transform($hover-scale, $hover-bg-color, $hover-margin);
 }
+

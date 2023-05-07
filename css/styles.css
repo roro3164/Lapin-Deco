@@ -1,38 +1,52 @@
-/*pagina*/
-a {
+@charset "UTF-8";
+/*tipografía*/
+/*background*/
+/*grilla*/
+/*animaciones*/
+/*header*/
+#logo {
   transition: transform 0.3s;
 }
-
-a:hover {
+#logo:hover {
   transform: scale(1.2);
+  background-color: rgba(240, 240, 240, 0.5);
 }
 
-/*header*/
 nav #menus li a {
   display: inline-block;
   padding: 3px;
   transition: transform 0.3s;
 }
-
 nav #menus li a:hover {
   transform: scale(1.2);
+  background-color: rgba(240, 240, 240, 0.5);
 }
 
 /*ambientes*/
 .img-ambientes {
   transition: transform 0.3s;
 }
-
 .img-ambientes:hover {
   transform: scale(0.9);
+  background-color: rgba(240, 240, 240, 0.5);
+}
+
+/*products*/
+.top-products, .product {
+  transition: transform 0.3s;
+}
+.top-products:hover, .product:hover {
+  transform: scale(1.2);
+  background-color: rgba(240, 240, 240, 0.5);
+  margin: 20px;
 }
 
 header {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
-  padding: 20px;
+  justify-content: space-evenly;
+  padding: 15px;
   background-color: #f0f0f0;
 }
 
@@ -65,14 +79,18 @@ header {
 }
 
 #image-menu {
-  width: 100vw;
-  max-height: 100vh;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
+  object-position: center;
 }
 
 h2 {
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
+  padding-bottom: 20px;
 }
 
 #top-selling {
@@ -87,7 +105,6 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #f5f5f5;
   padding: 20px;
 }
 
@@ -154,7 +171,6 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #f5f5f5;
   padding: 20px;
 }
 
@@ -182,7 +198,7 @@ footer {
   align-items: center;
   justify-content: space-evenly;
   align-items: flex-start;
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 li {
@@ -218,7 +234,8 @@ li a {
     align-items: center;
   }
 }
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1070px) {
+  /*main-index*/
   #top-selling {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -274,7 +291,7 @@ li a {
   .products-grid {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(1, 1fr);
+    grid-template-rows: repeat(, 1fr);
     gap: 10px;
     margin-left: 10px;
     margin-right: 10px;
