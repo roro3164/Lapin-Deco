@@ -10,13 +10,6 @@
   }
 }
 
-@media screen and (max-width: 1024px) {
-  /*header*/
-  header {
-    @include flex-center(column);
-  }
-}
-
 @media screen and (max-width: 1070px) {
   /*main-index*/
   #top-selling {
@@ -24,6 +17,13 @@
   }
   .products-grid {
     @include grid-setup(2, 6, $grid-gap);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  /*header*/
+  header {
+    @include flex-center(column);
   }
 }
  
@@ -47,7 +47,6 @@
   }
 
   /* main-ambientes */
-
   .img-ambientes {
     padding: 10px;
   }

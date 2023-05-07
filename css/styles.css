@@ -226,14 +226,6 @@ li a {
     gap: 20px;
   }
 }
-@media screen and (max-width: 1024px) {
-  /*header*/
-  header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-}
 @media screen and (max-width: 1070px) {
   /*main-index*/
   #top-selling {
@@ -247,6 +239,14 @@ li a {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(6, 1fr);
     gap: 20px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  /*header*/
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 @media screen and (max-width: 760px) {

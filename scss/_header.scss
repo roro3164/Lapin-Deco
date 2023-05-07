@@ -11,15 +11,15 @@ header {
     @include flex-center(row);
     justify-content: space-between;
   }
-
-      .menu {
+  
+    .menu {
         margin-left: 12px;
         margin-right: 12px;
         font-family: $font-nav-header;
         font-size: $font-size-menu;
         text-decoration: none;
         color: $black;
-      }     
+    }     
     
   #button-header {
     @include flex-center(row);

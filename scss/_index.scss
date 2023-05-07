@@ -1,7 +1,6 @@
 // Main index
 
 #image-menu {
- 
     top: 0;
     left: 0;
     width: 100%;
@@ -14,30 +13,31 @@
       text-align: center;
       font-family: $font-H2;
       padding-bottom: 20px;
-    }
+  }
   
   #top-selling {
     @include grid-setup(4, 1, $grid-gap);
     margin: 20px;
   }
   
-      .top-products {
-        @include flex-center(column);
-        padding: 20px;
-      }
-        .top-products img {
-            width: 250px;
-            height: 250px;
-            margin-top: 15px;
-        }
+    .top-products {
+      @include flex-center(column);
+      padding: 20px;
+    }
     
-          .name-top-products {
-            font-family: $font-name-price-product;
-            font-size: $font-size-name-product;
-            font-weight: 600;
-          }
+      .top-products img {
+          width: 250px;
+          height: 250px;
+          margin-top: 15px;
+      }
   
-          .price-top-products {
-            font-size: $font-size-price;
-            font-weight: bold;
-          }
+        .name-top-products {
+          font-family: $font-name-price-product;
+          font-size: $font-size-name-product;
+          font-weight: 600;
+        }
+
+        .price-top-products {
+          font-size: $font-size-price;
+          font-weight: bold;
+        }
