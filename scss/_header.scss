@@ -15,12 +15,13 @@ header {
   }
   
     .menu {
-        margin-left: 12px;
-        margin-right: 12px;
+        margin-left: 15px;
+        margin-right: 15px;
         font-family: 'Cormorant Garamond', serif;
         font-size: $font-size-menu;
         text-decoration: none;
         color: white;
+        padding-right: 0px;
     }     
     
   #button-header {

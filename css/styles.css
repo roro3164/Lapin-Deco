@@ -62,12 +62,13 @@ header {
 }
 
 .menu {
-  margin-left: 12px;
-  margin-right: 12px;
+  margin-left: 15px;
+  margin-right: 15px;
   font-family: "Cormorant Garamond", serif;
   font-size: 24px;
   text-decoration: none;
   color: white;
+  padding-right: 0px;
 }
 
 #button-header {
@@ -336,21 +337,6 @@ li a {
     gap: 20px;
   }
 }
-@media screen and (max-width: 935px) {
-  /*main-index*/
-  #top-selling {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 20px;
-  }
-  .products-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-    gap: 20px;
-  }
-}
 @media screen and (max-width: 1165px) {
   /*header*/
   .menu {
@@ -368,10 +354,26 @@ li a {
     font-size: 60px;
   }
 }
+@media screen and (max-width: 935px) {
+  /*main-index*/
+  #top-selling {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .products-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 20px;
+  }
+}
 @media screen and (max-width: 760px) {
   /* header */
   .search-input {
-    padding: 2px;
+    padding: 1px;
+    width: 100px;
   }
   .icons-header {
     width: 30px;
@@ -384,11 +386,12 @@ li a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-left: 0px;
+    padding-right: 0px;
   }
   .menu {
     margin-left: 0px;
     margin-right: 0px;
+    padding-right: 45px;
   }
   /* main-index */
   h2 {
