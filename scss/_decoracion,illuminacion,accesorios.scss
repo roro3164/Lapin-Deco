@@ -1,10 +1,23 @@
 // Main decoration, illumination, accessories
 
 .selectors {
-    @include flex-center(row);
-    margin-top: 20px;
+  @include flex-center(row);
+  margin-top: 20px;
+}
+
+  #categorias,
+  #ordenar {
+    display: inline-block;
+    padding: 4px 20px;
+    font-size: 15px;
+    font-weight: 200;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: $background-footer-header;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    color: #fff;
   }
-  
+
   label {
     font-family: $font-H1-label ;
     font-size: $font-size-h1;
@@ -29,19 +42,19 @@ h1 {
     padding: 20px;
    
   }
-      .product img {
-        width: 250px;
-        height: 250px;
-        margin-top: 15px;
-      }
-  
-      .name-product {
-        font-family: $font-name-price-product ;
-        font-size: $font-size-name-product;
-        font-weight: 600;
-      }
-      
-      .price {
-        font-size: $font-size-price;
-        font-weight: bold;
-      }
+    .product img {
+      width: 250px;
+      height: 250px;
+      margin-top: 15px;
+    }
+
+    .name-product {
+      font-family: $font-name-price-product ;
+      font-size: $font-size-name-product;
+      font-weight: 600;
+    }
+    
+    .price {
+      font-size: $font-size-price;
+      font-weight: bold;
+    }

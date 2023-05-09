@@ -1,22 +1,32 @@
 
-/*header*/
-#logo {
-  @include hover-transform($hover-scale, $hover-bg-color);
+/*icons*/
+#logo,.icons-header,.social-icons {
+  @include hover-transform($hover-scale);
 }
 
-nav #menus li a {
-  display: inline-block;
+/*nav, footer*/
+li {
   padding: 3px;
-  @include hover-transform($hover-scale, $hover-bg-color);
+  @include hover-transform($hover-scale);
 }
 
 /*ambientes*/
 .img-ambientes {
-  @include hover-transform(0.9, $hover-bg-color);
+  @include hover-transform(0.9,);
+  &:hover {
+    background-color:$hover-bg-color;
+  }
 }
 
 /*products*/
 .top-products,.product {
-  @include hover-transform($hover-scale, $hover-bg-color, $hover-margin);
+  @include hover-transform($hover-scale,$hover-margin);
+  &:hover {
+    background-color:$hover-bg-color;
+  }
 }
+
+
+
+
 

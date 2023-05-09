@@ -12,13 +12,12 @@
     gap: $gap;
   }
 
-@mixin hover-transform($scale, $bg-color, $margin: null) {
-  transition: transform $transition-duration;
-  &:hover {
-    transform: scale($scale);
-    background-color: $bg-color;
-    @if $margin != null {
-      margin: $margin;
+  @mixin hover-transform($scale, $margin: null) {
+    transition: transform $transition-duration;
+    &:hover {
+      transform: scale($scale);
+      @if $margin != null {
+        margin: $margin;
+      }
     }
   }
-}

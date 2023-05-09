@@ -4,7 +4,9 @@ header {
   justify-content: space-evenly;
   padding: 15px;
   background-color: $background-footer-header;
-  
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  border-bottom: 1px solid white;
+  border-top: 0.5px solid white;     
 }
 
   #menus {
@@ -15,17 +17,36 @@ header {
     .menu {
         margin-left: 12px;
         margin-right: 12px;
-        font-family: $font-nav-header;
+        font-family: 'Cormorant Garamond', serif;
         font-size: $font-size-menu;
         text-decoration: none;
-        color: $black;
+        color: white;
     }     
     
   #button-header {
     @include flex-center(row);
     justify-content: space-between;
   }
-      .search {
+      .search-input {
         margin-left: 4px;
         margin-right: 4px;
+        width: 70%;
+        padding: 5px;
+        font-size: 16px;
+        font-family: 'Lora', serif;
+        border: 2px solid #ccc;
+        border-radius: 5px;
+        outline: none;
+        transition: border-color 0.3s;
       }
+
+.search-input:focus {
+  border-color: #007BFF;
+}
+
+.icons-header {
+    width: 40px;  
+    height: 40px; 
+    margin-left: 10px; 
+}
+
