@@ -39,15 +39,10 @@
     @include grid-setup(2, 6, $grid-gap);
   }
 }
+
  
 @media screen and (max-width: 760px) {
   /* header */
-
-  .search-input {
-    padding: 1px;
-    width: 100px;
-  }
-
   .icons-header {
     width: 30px;  
     height: 30px;
@@ -59,14 +54,9 @@
   }
 
   #menus {
-    @include flex-center(column);
-   padding-right: 0px;
-  }
-
-  .menu {
-    margin-left: 0px;
-    margin-right: 0px;
-    padding-right: 45px;
+    @include grid-setup(2, 2, 5px);
+    justify-items: center; 
+    margin-right: 45px;
   }
 
   /* main-index */
@@ -131,5 +121,18 @@
 
   .anchor-footer {
     padding-right: 30px;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  /*header*/
+  #menus {
+    @include flex-center(column);
+   padding-right: 0px;
+  }
+
+  .search-input {
+    padding: 1px;
+    width: 100px;
   }
 }
