@@ -395,10 +395,6 @@ li a {
     margin-left: 10px;
     margin-right: 10px;
   }
-  .top-products img {
-    width: 200px;
-    height: 200px;
-  }
   /* main-ambientes */
   .img-ambientes {
     padding: 10px;
@@ -424,10 +420,6 @@ li a {
     gap: 10px;
     margin-left: 10px;
     margin-right: 10px;
-  }
-  .product img {
-    width: 200px;
-    height: 200px;
   }
   /* footer */
   footer {
