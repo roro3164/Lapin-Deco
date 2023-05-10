@@ -12,9 +12,7 @@
 
 @media screen and (max-width: 1165px) {
   /*header*/
-  .menu{
-    font-size: 20px;
-  }
+  
 
   header {
     @include flex-center(column);
@@ -41,7 +39,7 @@
 }
 
  
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 820px) {
   /* header */
   .icons-header {
     width: 30px;  
@@ -124,7 +122,7 @@
   }
 }
 
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 500px) {
   /*header*/
   #menus {
     @include flex-center(column);
