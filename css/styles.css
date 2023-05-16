@@ -612,10 +612,14 @@ li a {
     margin-top: 8px;
   }
   #product-price {
-    margin: 3px 0 0 3px;
+    margin: 7px 0 0 3px;
   }
-  h3 span {
-    font-size: 30px;
+  #product-price > span {
+    font-size: 27px;
+    padding: 10px;
+  }
+  #methods-payment {
+    justify-content: space-evenly;
   }
 }
 * {
