@@ -33,11 +33,11 @@ li:hover {
 
 /*products*/
 .top-products, .product {
-  transition: transform 0.3s;
+  transition: transform 0.6s;
 }
 .top-products:hover, .product:hover {
   transform: scale(1.1);
-  margin: 6px;
+  margin: 3px;
   background-color: rgba(240, 240, 240, 0.5);
 }
 

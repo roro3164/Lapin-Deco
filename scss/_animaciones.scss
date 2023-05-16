@@ -20,7 +20,7 @@ li {
 
 /*products*/
 .top-products,.product {
-    @include hover-transform-2($hover-scale-2, $transition-duration, $hover-margin-2, $hover-bg-color);
+    @include hover-transform-2($hover-scale-2, $transition-duration-2, $hover-margin-2, $hover-bg-color);
   }
   
   
