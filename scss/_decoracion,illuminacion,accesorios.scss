@@ -19,15 +19,16 @@
   }
 
   label {
-    font-family: $font-H1-label ;
+    font-family:$font-principal;
     font-size: $font-size-h1;
     padding-left: 30px;
     padding-right: 15px;
+    font-weight: bold;
   }
   
 h1 {
   text-align: center;
-  font-family:$font-H1-label ;
+  font-family:$font-principal;
   padding: 20px;
 }
 
@@ -45,16 +46,18 @@ h1 {
     .product img {
       width: 250px;
       height: 250px;
-      margin-top: 15px;
+      margin-top: 15px; 
     }
 
     .name-product {
-      font-family: $font-name-price-product ;
+      font-family: $font-principal;
       font-size: $font-size-name-product;
-      font-weight: 600;
+      font-weight: 800;
+      margin-bottom: 10px;
     }
     
     .price {
-      font-size: $font-size-price;
-      font-weight: bold;
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 25px;
+      margin: 0px;
     }

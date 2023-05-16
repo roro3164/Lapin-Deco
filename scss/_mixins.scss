@@ -12,8 +12,33 @@
     gap: $gap;
   }
 
+/*
+  @mixin hover-transform-1($scale) {
+    transition: transform $transition-duration-1;
+    &:hover {
+      transform: scale($scale);
+    }
+  }
+
+  @mixin hover-transform-2($scale) {
+    transition: transform $transition-duration-2;
+    &:hover {
+      transform: scale($scale);
+    }
+  }
+  */
+
+ 
   @mixin hover-transform($scale) {
     transition: transform $transition-duration;
+    &:hover {
+      transform: scale($scale);
+
+    }
+  }
+
+  @mixin hover-transform-2($scale) {
+    transition: transform $transition-duration-2;
     &:hover {
       transform: scale($scale);
 

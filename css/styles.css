@@ -3,9 +3,24 @@
 /*background*/
 /*grilla*/
 /*animaciones*/
+/*
+  @mixin hover-transform-1($scale) {
+    transition: transform $transition-duration-1;
+    &:hover {
+      transform: scale($scale);
+    }
+  }
+
+  @mixin hover-transform-2($scale) {
+    transition: transform $transition-duration-2;
+    &:hover {
+      transform: scale($scale);
+    }
+  }
+  */
 /*icons*/
 #logo, .icons-header, .social-icons {
-  transition: transform 0.3s;
+  transition: transform 0.6s;
 }
 #logo:hover, .icons-header:hover, .social-icons:hover {
   transform: scale(1.2);
@@ -14,7 +29,7 @@
 /*nav, footer*/
 li {
   padding: 3px;
-  transition: transform 0.3s;
+  transition: transform 0.6s;
 }
 li:hover {
   transform: scale(1.2);
@@ -22,7 +37,7 @@ li:hover {
 
 /*ambientes*/
 .img-ambientes {
-  transition: transform 0.3s;
+  transition: transform 0.6s;
 }
 .img-ambientes:hover {
   transform: scale(0.9);
@@ -33,7 +48,7 @@ li:hover {
 
 /*products*/
 .top-products, .product {
-  transition: transform 0.3s;
+  transition: transform 1.5s;
 }
 .top-products:hover, .product:hover {
   transform: scale(1.2);
@@ -198,14 +213,16 @@ h2 {
 }
 
 .name-top-products {
-  font-family: "Courier New", Courier, monospace;
-  font-size: 25px;
-  font-weight: 600;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 30px;
+  font-weight: 800;
+  margin-bottom: 10px;
 }
 
 .price-top-products {
-  font-size: 20px;
-  font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 25px;
+  margin: 0px;
 }
 
 .img-ambientes {
@@ -242,15 +259,16 @@ h2 {
 }
 
 label {
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-family: "Cormorant Garamond", serif;
   font-size: x-large;
   padding-left: 30px;
   padding-right: 15px;
+  font-weight: bold;
 }
 
 h1 {
   text-align: center;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-family: "Cormorant Garamond", serif;
   padding: 20px;
 }
 
@@ -277,14 +295,116 @@ h1 {
 }
 
 .name-product {
-  font-family: "Courier New", Courier, monospace;
-  font-size: 25px;
-  font-weight: 600;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 30px;
+  font-weight: 800;
+  margin-bottom: 10px;
 }
 
 .price {
-  font-size: 20px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 25px;
+  margin: 0px;
+}
+
+#img-text {
+  display: flex;
+}
+
+#product-name {
+  background-color: #F0F0F0;
+  margin-top: 0px;
+  margin-bottom: 60px;
+  padding: 10px;
+}
+
+#product-img img {
+  width: 50vw;
+  max-width: 500px;
+  height: auto;
+  margin-top: 0px;
+  margin-left: 60px;
+  margin-right: 120px;
+}
+
+#text-product {
+  margin-right: 100px;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 22px;
+}
+
+#cart {
+  display: flex;
+  justify-content: space-between;
+}
+
+#product-description {
+  margin-top: 0px;
+}
+
+#product-price {
+  font-size: 25px;
   font-weight: bold;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-right: 25px;
+  margin-left: 0px;
+}
+
+#product-price span {
+  font-size: 40px;
+}
+
+#add-to-cart {
+  padding: 8px 20px;
+  background-color: #000000;
+  color: white;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  height: 60px;
+}
+#add-to-cart:hover {
+  background-color: #808080;
+}
+
+#selector-product {
+  padding-top: 13px;
+}
+
+#quantity {
+  padding: 5px 10px;
+  border: 1.5px solid #000;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+}
+
+#quantity:focus {
+  border-color: #808080;
+}
+
+#cart label {
+  padding-left: 0px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+#product-dimensions, #product-code {
+  font-family: "Times New Roman", Times, serif;
+}
+
+#methods-payment {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#methods-payment > img {
+  width: 85px;
 }
 
 footer {
@@ -298,7 +418,7 @@ footer {
   margin-top: 40px;
 }
 
-h3 {
+footer h3 {
   color: white;
   font-family: "Cormorant Garamond", serif;
   font-size: 20px;
@@ -336,6 +456,10 @@ li a {
     grid-template-rows: repeat(4, 1fr);
     gap: 20px;
   }
+  /*product-page*/
+  #product-img img {
+    margin-right: 50px;
+  }
 }
 @media screen and (max-width: 1165px) {
   /*header*/
@@ -349,6 +473,19 @@ li a {
   }
   .carousel-item {
     font-size: 60px;
+  }
+  /*product-page*/
+  #img-text {
+    flex-direction: column;
+    align-items: center;
+  }
+  #product-img img {
+    margin-bottom: 50px;
+  }
+  #text-product {
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
   }
 }
 @media screen and (max-width: 935px) {
@@ -450,6 +587,35 @@ li a {
   .search-input {
     padding: 1px;
     width: 100px;
+  }
+}
+@media screen and (max-width: 425px) {
+  /*product-page*/
+  #product-name {
+    margin-bottom: 10px;
+  }
+  #product-img img {
+    width: 250px;
+    height: 250px;
+    margin: 30px;
+  }
+  #text-product {
+    margin: 0 30px 0 30px;
+  }
+  #text-product, #selector-product > label, #product-price {
+    font-size: 20px;
+  }
+  #selector-product {
+    width: 80px;
+  }
+  #quantity {
+    margin-top: 8px;
+  }
+  #product-price {
+    margin: 3px 0 0 3px;
+  }
+  h3 span {
+    font-size: 30px;
   }
 }
 * {

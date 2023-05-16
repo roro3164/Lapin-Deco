@@ -1,12 +1,10 @@
 /*tipografía*/
 $black: #F5F5F5;
-$font-nav-header: 'Cormorant Garamond', serif;
-$font-name-price-product: 'Courier New', Courier, monospace;
-$font-H1-label: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-$font-H2: Arial, Helvetica, sans-serif;
+$font-principal: 'Cormorant Garamond', serif;
+$font-second: Arial, Helvetica, sans-serif;
 $font-size-menu: 24px;
 $font-size-h1: x-large;
-$font-size-name-product: 25px;
+$font-size-name-product: 30px;
 $font-size-price: 20px;
 
 /*background*/
@@ -16,7 +14,8 @@ $background-footer-header: #312e38 ;
 $grid-gap: 20px;
 
 /*animaciones*/
-$transition-duration: 0.3s;
+$transition-duration: 0.6s;
+$transition-duration-2: 1.5s;
 $hover-scale: 1.2;
 $hover-bg-color: rgba(240, 240, 240, 0.5);
 $hover-margin: 20px;

@@ -20,12 +20,14 @@ li {
 
 /*products*/
 .top-products,.product {
-  @include hover-transform($hover-scale);
+  @include hover-transform-2($hover-scale);
   &:hover {
     background-color:$hover-bg-color;
     margin:$hover-margin
   }
 }
+
+
 
 
 
