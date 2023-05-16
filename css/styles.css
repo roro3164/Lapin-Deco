@@ -3,24 +3,9 @@
 /*background*/
 /*grilla*/
 /*animaciones*/
-/*
-  @mixin hover-transform-1($scale) {
-    transition: transform $transition-duration-1;
-    &:hover {
-      transform: scale($scale);
-    }
-  }
-
-  @mixin hover-transform-2($scale) {
-    transition: transform $transition-duration-2;
-    &:hover {
-      transform: scale($scale);
-    }
-  }
-  */
 /*icons*/
 #logo, .icons-header, .social-icons {
-  transition: transform 0.6s;
+  transition: transform 0.3s;
 }
 #logo:hover, .icons-header:hover, .social-icons:hover {
   transform: scale(1.2);
@@ -29,7 +14,7 @@
 /*nav, footer*/
 li {
   padding: 3px;
-  transition: transform 0.6s;
+  transition: transform 0.3s;
 }
 li:hover {
   transform: scale(1.2);
@@ -37,7 +22,7 @@ li:hover {
 
 /*ambientes*/
 .img-ambientes {
-  transition: transform 0.6s;
+  transition: transform 0.3s;
 }
 .img-ambientes:hover {
   transform: scale(0.9);
@@ -48,14 +33,12 @@ li:hover {
 
 /*products*/
 .top-products, .product {
-  transition: transform 1.5s;
+  transition: transform 0.3s;
 }
 .top-products:hover, .product:hover {
-  transform: scale(1.2);
-}
-.top-products:hover, .product:hover {
+  transform: scale(1.1);
+  margin: 6px;
   background-color: rgba(240, 240, 240, 0.5);
-  margin: 20px;
 }
 
 header {
