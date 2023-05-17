@@ -12,10 +12,8 @@ li {
 
 /*ambientes*/
 .img-ambientes {
-  @include hover-transform(0.9);
-  &:hover {
-    background-color:$hover-bg-color;
-  }
+  @include hover-transform-2(0.9, $transition-duration-2, $hover-margin-2, $hover-bg-color);
+  
 }
 
 /*products*/
