@@ -7,14 +7,14 @@
         <meta name="description" content="Descubre nuestra amplia gama de artículos de decoración para tu hogar, desde muebles modernos hasta accesorios decorativos únicos. ¡Dale vida a tus espacios con nuestros productos de calidad!">
         <meta name="keywords" content="decoración de interiores, decoración para el hogar, tienda de decoración en línea, muebles, accesorios decorativos, textiles, iluminación, decoración de paredes, objetos decorativos, tendencias en decoración, tienda de decoración, decoración de dormitorios, decoración de salas, decoración de cocinas, decoración de baños">
         <title>Lapin Deco</title>
-        <link rel="icon" href="../picture/logo.png" type="image/x-icon">
+        <link rel="icon" href="../picture/logos/logo.png" type="image/x-icon">
         <link rel="stylesheet" href="../css/styles.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&display=swap">
     </head>
 
     <body>
         <header>
-            <a id=logo href="../index.html"><img src="../picture/logos/LAPINsfr (2).png" alt="logo-lapin"></a>
+            <a id=logo href="../index.html"><img src="../picture/logos/lapainroundsf.png" alt="logo-lapin"></a>
 
             <nav> 
                 <ul id="menus">   
@@ -27,93 +27,103 @@
 
             <section id="button-header">
                 <input type="text" placeholder="BUSCAR..." class="search-input">
-                <a href="#" class="icons-header"><img src="../picture/iconos header/4918946_account_avatar_profile_user_icon.svg" alt=""></a>
+                <a href="#" class="icons-header" id="icons-user"><img src="../picture/iconos header/4918946_account_avatar_profile_user_icon.svg" alt=""></a>
                 <a href="#" class="icons-header"><img src="../picture/iconos header/6619639_and_basket_cart_ecommerce_shopping_icon.svg" alt=""></a> 
             </section>      
         </header>
 
-        <main id="carrito">
-            <div class="product-row">
-                <div class="product-info">
-                    <h2>Titre du produit</h2>
-                    <img src="image.jpg" alt="Image du produit">
+        <div class="grid-container">
+            <div class="product-section">
+                <h2>Mi Carrito</h2>
+                <!-- Product 1 -->
+                <div class="product-row">
+                    <div class="product-img">
+                        <img src="../picture/decoration/reyes del juego.jpg" alt="Image du produit 1">
+                    </div>
+                    <div class="product-info">
+                        <h3>Reyes del Juego</h3>
+                        <p>Dimensiones : 98"W x 36"D x 37"H</p>
+                        <p>SKU : 601003499</p>
+                    </div>
+                    <div class="product-pricing">
+                        <p class="price">$ 30 000</p>
+                        <div class="quantity-selector">
+                            <img src="../picture/iconos/3844425_can_trash_icon.svg" alt="Icone de la poubelle">
+                            <select>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                            </select>
+                        </div>
+                    </div>
                 </div>
-        
-                <div class="product-dimensions">
-                    <p>Dimensions: 10x20</p>
-                    <p>Code: ABC123</p>
+                <!-- Product 2 -->
+                <div class="product-row">
+                    <div class="product-img">
+                        <img src="../picture/illuminacion/Product-luz-1.jpg" alt="Image du produit 2">
+                    </div>
+                    <div class="product-info">
+                        <h3>Lampara Juno</h3>
+                        <p>Dimensiones : 98"W x 36"D x 37"H</p>
+                        <p>SKU : 601003499</p>
+                    </div>
+                    <div class="product-pricing">
+                        <p class="price">$ 10 000</p>
+                        <div class="quantity-selector">
+                            <img src="../picture/iconos/3844425_can_trash_icon.svg" alt="Icone de la poubelle">
+                            <select>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                            </select>
+                        </div>
+                    </div>
                 </div>
-        
-                <div class="product-pricing">
-                    <p>Prix: $99.99</p>
-                    <div class="quantity-selector">
-                        <img src="bin.png" alt="Icône de poubelle">
-                        <select name="quantity">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <!-- Ajoutez plus d'options si nécessaire -->
-                        </select>
+                <!-- Product 3 -->
+                <div class="product-row">
+                    <div class="product-img">
+                        <img src="../picture/accesorios/Product-accesorios-1.png" alt="Image du produit 3">
+                    </div>
+                    <div class="product-info">
+                        <h3>Mortelo Blanco</h3>
+                        <p>Dimensiones : 98"W x 36"D x 37"H</p>
+                        <p>Code: GHI789</p>
+                    </div>
+                    <div class="product-pricing">
+                        <p class="price">$ 8 000</p>
+                        <div class="quantity-selector">
+                            <img src="../picture/iconos/3844425_can_trash_icon.svg" alt="Icone de la poubelle">
+                            <select>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                            </select>
+                        </div>
                     </div>
                 </div>
             </div>
-            
-            <section id="mi-carrito">
-                <h2>Mi carrito</h2>
-                <section id="products-carrito">
-                    <article id="product-carrito-1">
-
-                        <section>
-                            <h3>Reyes del Juego</h3>
-                            <img src="../picture/decoration/reyes del juego.png" alt="">
-                        </section>
-
-                        <section>
-                            <p id="product-dimensions">Dimensiones : 98"W x 36"D x 37"H</p><br>
-                            <p id="product-code">SKU : 601003499</p>
-                        </section>
-                        
-                        <section>
-                            <p>$ 30 000</p>
-                            <img class=trash-icons src="../picture/iconos/3844425_can_trash_icon.svg" alt="">
-                            <select name="" id=""></select>
-                        </section>
-                    </article>
-                
-                    <article id="product-carrito-2">
-                        <img src="../picture/illuminacion/Product-luz-1.jpg" alt="">
-                        <h3>Lampara Juno</h3>
-                        <small id="product-dimensions">Dimensiones : 98"W x 36"D x 37"H</small><br>
-                        <small id="product-code">SKU : 601003499</small>
-                    
-                    </article>
-                    <article id="product-carrito-3">
-                        <img src="../picture/accesorios/Product-accesorios-1.png" alt="">
-                        <h3>Mortelo Blanco</h3>
-                        <small id="product-dimensions">Dimensiones : 98"W x 36"D x 37"H</small><br>
-                        <small id="product-code">SKU : 601003499</small>
-                        <p></p>
-                    
-                    </article>
+            <div class="summary-section">
+                <h2>Resumen</h2>
+                <section id="payment">
+                <div class="promo-code">
+                    <label for="promo-code">Cupón de descuento:</label>
+                    <input type="text" id="promo-code" placeholder="Cupón">
+                </div>
+                <div class="total-section">
+                    <p>Total articulos: <span class="price">$ 48 000</span></p>
+                    <p>Costo de envío: <span class="price">$ 2000</span></p>
+                    <p>Total: <span class="price">$  50 000</span></p>
+                </div>
+                <button class="buy-btn">Comprar</button>
+                <div class="payment-methods">
+                    <img src="../picture/payment/1933702_charge_credit card_debit_payment_visa_icon.svg" alt="Moyen de paiement 1">
+                    <img src="../picture/payment/1933703_charge_credit card_debit_mastercard_payment_icon.svg" alt="Moyen de paiement 2">
+                    <img src="../picture/payment/1933704_american express_amex_charge_credit card_payment_icon.svg" alt="Moyen de paiement 3">
+                </div>
                 </section>
-            </section>
+            </div>
 
-            <section id="resumen">
-                <h2>resumen</h2>
-                <select name="" id=""></select>
-                <p></p>
-                <p></p>
-                <p></p>
-                <button></button>
-                <article>
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                </article>
-
-
-
-            </section>
-        </main>
+        </div>
 
         <footer>
             <article>
@@ -149,5 +159,8 @@
                 </ul>
             </article>                 
         </footer>
+
     </body>
 </html>
+    
+ 

@@ -22,8 +22,12 @@ footer {
                 color: white;
                 font-family: $font-principal;
                 padding-right: 20px;
-                cursor: default;
+                
             }
+
+    .anchors-footer a {
+        cursor: default;   
+    }
 
     .social-icons {
         width: 20px;  
