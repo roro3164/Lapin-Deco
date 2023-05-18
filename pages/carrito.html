@@ -14,7 +14,7 @@
 
     <body>
         <header>
-            <a id=logo href="../index.html"><img src="../picture/logos/lapainroundsf.png" alt="logo-lapin"></a>
+            <a id=logo href="../index.html"><img src="../picture/logos/lapainroundsf.png" alt="logo lapin"></a>
 
             <nav> 
                 <ul id="menus">   
@@ -27,28 +27,30 @@
 
             <section id="button-header">
                 <input type="text" placeholder="BUSCAR..." class="search-input">
-                <a href="#" class="icons-header" id="icons-user"><img src="../picture/iconos header/4918946_account_avatar_profile_user_icon.svg" alt=""></a>
-                <a href="#" class="icons-header"><img src="../picture/iconos header/6619639_and_basket_cart_ecommerce_shopping_icon.svg" alt=""></a> 
+                <a href="#" class="icons-header" id="icons-user"><img src="../picture/iconos header/4918946_account_avatar_profile_user_icon.svg" alt="user icon"></a>
+                <a href="#" class="icons-header"><img src="../picture/iconos header/6619639_and_basket_cart_ecommerce_shopping_icon.svg" alt="cart icon"></a> 
             </section>      
         </header>
 
-        <div class="grid-container">
-            <div class="product-section">
+        <main class="grid-container">
+            <section class="product-section">
                 <h2>Mi Carrito</h2>
-                <!-- Product 1 -->
-                <div class="product-row">
+
+                <article class="product-cart">
                     <div class="product-img">
-                        <img src="../picture/decoration/reyes del juego.jpg" alt="Image du produit 1">
+                        <a href="./Reyes-del-juego.html"><img src="../picture/decoration/reyes del juego.jpg" alt="Reyes del juego"></a>
                     </div>
+        
                     <div class="product-info">
                         <h3>Reyes del Juego</h3>
                         <p>Dimensiones : 98"W x 36"D x 37"H</p>
                         <p>SKU : 601003499</p>
                     </div>
+        
                     <div class="product-pricing">
                         <p class="price">$ 30 000</p>
                         <div class="quantity-selector">
-                            <img src="../picture/iconos/3844425_can_trash_icon.svg" alt="Icone de la poubelle">
+                            <img src="../picture/iconos/3844425_can_trash_icon.svg" alt="trash icon">
                             <select>
                                 <option>1</option>
                                 <option>2</option>
@@ -56,21 +58,23 @@
                             </select>
                         </div>
                     </div>
-                </div>
-                <!-- Product 2 -->
-                <div class="product-row">
+                </article>
+                
+                <article class="product-cart">
                     <div class="product-img">
-                        <img src="../picture/illuminacion/Product-luz-1.jpg" alt="Image du produit 2">
+                        <a href="./Lampara Juno.html"><img src="../picture/illuminacion/Product-luz-1.jpg" alt="Lampara Juno"></a>
                     </div>
+
                     <div class="product-info">
                         <h3>Lampara Juno</h3>
                         <p>Dimensiones : 98"W x 36"D x 37"H</p>
                         <p>SKU : 601003499</p>
                     </div>
+
                     <div class="product-pricing">
                         <p class="price">$ 10 000</p>
                         <div class="quantity-selector">
-                            <img src="../picture/iconos/3844425_can_trash_icon.svg" alt="Icone de la poubelle">
+                            <img src="../picture/iconos/3844425_can_trash_icon.svg" alt="trash icon">
                             <select>
                                 <option>1</option>
                                 <option>2</option>
@@ -78,21 +82,23 @@
                             </select>
                         </div>
                     </div>
-                </div>
-                <!-- Product 3 -->
-                <div class="product-row">
+                </article>
+              
+                <article class="product-cart">
                     <div class="product-img">
-                        <img src="../picture/accesorios/Product-accesorios-1.png" alt="Image du produit 3">
+                        <a href="./Mortelo blanco.html"><img src="../picture/accesorios/Product-accesorios-1.png" alt="Mortelo Blanco"></a>
                     </div>
+
                     <div class="product-info">
                         <h3>Mortelo Blanco</h3>
                         <p>Dimensiones : 98"W x 36"D x 37"H</p>
-                        <p>Code: GHI789</p>
+                        <p>SKU : 601003499</p>
                     </div>
+
                     <div class="product-pricing">
                         <p class="price">$ 8 000</p>
                         <div class="quantity-selector">
-                            <img src="../picture/iconos/3844425_can_trash_icon.svg" alt="Icone de la poubelle">
+                            <img src="../picture/iconos/3844425_can_trash_icon.svg" alt="trash icon">
                             <select>
                                 <option>1</option>
                                 <option>2</option>
@@ -100,30 +106,33 @@
                             </select>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="summary-section">
-                <h2>Resumen</h2>
-                <section id="payment">
-                <div class="promo-code">
-                    <label for="promo-code">Cupón de descuento:</label>
-                    <input type="text" id="promo-code" placeholder="Cupón">
-                </div>
-                <div class="total-section">
-                    <p>Total articulos: <span class="price">$ 48 000</span></p>
-                    <p>Costo de envío: <span class="price">$ 2000</span></p>
-                    <p>Total: <span class="price">$  50 000</span></p>
-                </div>
-                <button class="buy-btn">Comprar</button>
-                <div class="payment-methods">
-                    <img src="../picture/payment/1933702_charge_credit card_debit_payment_visa_icon.svg" alt="Moyen de paiement 1">
-                    <img src="../picture/payment/1933703_charge_credit card_debit_mastercard_payment_icon.svg" alt="Moyen de paiement 2">
-                    <img src="../picture/payment/1933704_american express_amex_charge_credit card_payment_icon.svg" alt="Moyen de paiement 3">
-                </div>
-                </section>
-            </div>
+                </article>
+            </section>
 
-        </div>
+            <section class="summary-section">
+                <h2>Resumen</h2>
+                <div id="payment">
+                    <div class="promo-code">
+                        <label for="promo-code">Cupón de descuento:</label>
+                        <input type="text" id="promo-code" placeholder="Cupón">
+                    </div>
+        
+                    <div class="total-section">
+                        <p>Total articulos: <span class="price">$ 48 000</span></p>
+                        <p>Costo de envío: <span class="price">$ 2000</span></p>
+                        <p>Total: <span class="price">$  50 000</span></p>
+                    </div>
+        
+                    <button class="buy-btn">Comprar</button>
+        
+                    <div class="payment-methods">
+                        <img src="../picture/payment/1933702_charge_credit card_debit_payment_visa_icon.svg" alt="visa">
+                        <img src="../picture/payment/1933703_charge_credit card_debit_mastercard_payment_icon.svg" alt="mastercard">
+                        <img src="../picture/payment/1933704_american express_amex_charge_credit card_payment_icon.svg" alt="american express">
+                    </div>
+                </div>
+            </section>
+        </main>
 
         <footer>
             <article>
@@ -159,7 +168,6 @@
                 </ul>
             </article>                 
         </footer>
-
     </body>
 </html>
     

@@ -17,7 +17,7 @@
     margin-bottom: 0px;
 }
 
-.product-row {
+.product-cart {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     gap: 10px;
@@ -176,7 +176,7 @@
         grid-template-columns: 1fr;
     }
 
-    .product-row {
+    .product-cart {
         margin-left: 0px;
         margin-right: 0px;
         width:90%
@@ -214,7 +214,7 @@
 
 @media (max-width: 590px) {
 
-    .product-row {
+    .product-cart {
         display: flex;
         flex-direction: column;
         align-items: center;
