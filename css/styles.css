@@ -559,6 +559,11 @@ h1 {
   width: 100px;
 }
 
+#logo2-lapin {
+  width: 150px;
+  margin: 30px 120px 0 120px;
+}
+
 @media (max-width: 1020px) {
   .grid-container {
     grid-template-columns: 1fr;
