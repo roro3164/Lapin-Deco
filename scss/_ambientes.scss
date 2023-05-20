@@ -1,13 +1,16 @@
+#ambientes {
+  @include flex-center(column);
 
-.img-ambientes {
-   
-  width: 100vw;
-  max-height: 100vh;
-  object-fit: cover;
-  padding: 20px;
-  cursor: default;
+  .img-ambientes {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center; 
+    padding: 20px;
+    cursor: default;
   }
+}
 
-    #ambientes {
-      @include flex-center(column);
-    }
+
+
+    
