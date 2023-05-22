@@ -5,7 +5,7 @@
 }
 
 /* nav,footer */
-li {
+.menu,li {
   padding: 3px;
   @include hover-transform($hover-scale);
 }

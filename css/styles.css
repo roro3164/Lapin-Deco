@@ -22,11 +22,11 @@ body {
 }
 
 /* nav,footer */
-li {
+.menu, li {
   padding: 3px;
   transition: transform 0.3s;
 }
-li:hover {
+.menu:hover, li:hover {
   transform: scale(1.2);
 }
 
