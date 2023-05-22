@@ -1,27 +1,27 @@
 
-/*icons*/
+/* icons */
 #logo,.icons-header,.social-icons {
   @include hover-transform($hover-scale);
 }
 
-/*nav, footer*/
+/* nav,footer */
 li {
   padding: 3px;
   @include hover-transform($hover-scale);
 }
 
-/*ambientes*/
+/* ambientes */
 .img-ambientes {
   @include hover-transform-2(0.9, $transition-duration-2, $hover-margin-2, $hover-bg-color);
   
 }
 
-/*products*/
+/* products */
 .top-products,.product {
     @include hover-transform-2($hover-scale-2, $transition-duration-2, $hover-margin-2, $hover-bg-color);
   }
 
-/*carousel text index*/
+/* carousel text index */
 .image-container {
   position: relative;
   width: 100%;

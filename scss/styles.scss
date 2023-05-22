@@ -1,3 +1,4 @@
+/* reset */
 * {
   box-sizing: border-box;
 }
@@ -6,16 +7,17 @@ body {
   margin: 0;
 }
 
+/* import */
 @import'variables';
 @import'mixins';
 @import'animaciones';
 @import'header';
+@import'footer';
 @import'index';
 @import'ambientes';
 @import'decoracion,illuminacion,accesorios';
 @import'products';
 @import'carrito';
-@import'footer';
 @import'mediaquery';
 
 

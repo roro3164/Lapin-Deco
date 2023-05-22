@@ -44,45 +44,15 @@
       margin-left: 100px;
     }
   }  
-}
 
-@media (max-width: 1020px) {
   /*carrito*/
   .grid-container {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
 
-    .product-section {
-      display: flex;
-      align-items: center;
-
-      h2 {
-        margin-left: 0px;
-        }
-
-      .product-cart {
-        margin-left: 0px;
-        margin-right: 0px;
-        width:90%
-      }
-
-       .product-info {
-        margin-left: 0px;
-        text-align: center;
-        width: 90%;
-
-        h3 {
-          text-align: center;
-        }
-      }
-    } 
-    
-    .summary-section>h2 {
-      text-align: center;
-    } 
-    
-    #payment {
-      margin-left: 43px;
-      margin-right: 43px;
+    .product-section, .summary-section {
+      flex: 1;
     }
   }
 }
@@ -136,15 +106,17 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-left: 20px;
+    margin: 20px;
 
     .selector {
       display: flex;
       flex-direction: column;
       align-items: flex-start !important;
+      padding-bottom:10px;
     
       label {
         padding-left: 0px;
+        padding-bottom: 5px;
       }
     } 
   }
@@ -154,10 +126,34 @@
     justify-content: center;
   }
 
-  .products-grid {
-    @include grid-setup(1, 1, 10px);
-    margin-left: 10px;
-    margin-right: 10px;
+  /* carrito */
+  .grid-container 
+  .product-cart{ 
+    flex-direction: column;
+    align-items: center;
+
+    .product-info {
+      display: flex;
+      flex-direction: column;
+      align-items: center
+
+    }
+  }
+
+  /* product */
+  #product-price {
+    display: flex;
+    flex-direction: column;
+
+    span {
+      font-size: 28px !important;
+      padding: 0px !important;
+    }
+  }
+
+  #methods-payment{
+    display: flex;
+    justify-content: center !important;
   }
 
   /* footer */
@@ -175,52 +171,18 @@
         padding-right: 30px;
       }
     }
-  }  
-}
-
-@media screen and (max-width: 590px) {
-  /*carrito*/
-  .product-cart {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    .product-info > p {
-      font-size: 20px !important;
-    } 
-    
-    .product-pricing {
-      align-self: center !important;
-    }
-  }
-
-  #payment {
-    margin: 15px !important; 
-      
-    .total-section> p {
-      font-size: 20px !important; 
-    }
-    .payment-methods>img {
-      width:80px !important;   
-    }   
-  }
-
-  /*product*/
-  #product-price {
-    display: flex;
-    flex-direction: column;
-
-    span {
-      font-size: 28px !important;
-      padding: 0px !important;
-    }
-  }
-
-  #methods-payment{
-    display: flex;
-    justify-content: center !important;
   }
 }
 
+@media screen and (max-width: 640px) {
+  /* main-decoration-illuminacion-accesorios */
+  .products-grid {
+    @include grid-setup(1, 1, 10px);
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+ 
 @media screen and (max-width: 500px) {
   /*header*/
   header #menus {
@@ -235,27 +197,15 @@
 }
 
 @media screen and (max-width: 425px) {
-  /*ambientes*/
-
+  /* ambientes */
   .img-ambientes {
-    padding: 8px !important;
+    padding: 20px 8px 0 8px !important;
   }
 
   #footer-ambientes {
     margin-top: 20px;
   }
 
-  .selectors {
-    margin: 15px;
-    .selector {
-      padding-bottom:10px;
-
-      label {
-        padding-bottom: 5px;
-      }
-    } 
-  }
- 
   /*product-page*/
   .product-name {
     margin-bottom: 10px;
@@ -266,35 +216,34 @@
     height: 250px;
     margin: 0px;
   }
+  
+  #selector-product {
+    width: 80px;
+  
+    label{
+      font-size: 20px;
+    }
+    
+    #quantity {
+      margin-top: 8px;
+    }      
+  }
 
-  #text-product {
-    margin: 0 30px 0 30px !important;
-    font-size: 20px;
+  #product-price {
+    margin-top: 12px !important ;
+  }
   
-    #selector-product {
-      width: 80px;
-    
-      label{
-        font-size: 20px;
-      }
-      
-      #quantity {
-        margin-top: 8px;
-      }      
-    }
-  
-    #product-price {
-      margin: 7px 0 0 3px !important;
-      font-size: 22px !important;
-    
-      span {
-        font-size: 27px !important;
-      }
-    }
-    
-    #methods-payment {
-      justify-content: space-evenly;
-    }
-  }        
+  #methods-payment {
+    justify-content: space-evenly;
+  }
+         
+  /*carrito*/
+  .grid-container {
+    padding: 0 15px;
+
+    .payment-methods>img {
+      width:70px !important;   
+    }   
+  }
 }
 
