@@ -389,10 +389,7 @@ h1 {
 #img-text #text-product #cart #product-price {
   font-size: 25px;
   font-weight: bold;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  margin-right: 25px;
-  margin-left: 0px;
+  margin: 0px;
 }
 #img-text #text-product #cart #product-price span {
   font-size: 40px;
@@ -425,7 +422,7 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
-  padding: 0 40px;
+  padding: 0px 40px;
 }
 .grid-container .product-section {
   flex: 2;
@@ -443,7 +440,6 @@ h1 {
   justify-content: space-evenly;
   border: 0.8px solid black;
   border-radius: 5px;
-  padding: 10px;
   padding: 25px;
   background-color: #f0f0f0;
 }
@@ -691,6 +687,7 @@ h1 {
   #product-price {
     display: flex;
     flex-direction: column;
+    margin-top: 10px !important;
   }
   #product-price span {
     font-size: 28px !important;
@@ -755,9 +752,8 @@ h1 {
     margin-bottom: 10px;
   }
   #product-img img {
-    width: 250px;
-    height: 250px;
-    margin: 0px;
+    width: 280px !important;
+    margin: 20px !important;
   }
   #selector-product {
     width: 80px;
@@ -776,7 +772,19 @@ h1 {
   }
   /*carrito*/
   .grid-container {
-    padding: 0 15px;
+    padding: 15px;
+  }
+  .grid-container .product-cart {
+    padding: 0 15px !important;
+  }
+  .grid-container .product-cart .product-img img {
+    margin: 20px;
+  }
+  .grid-container .product-cart .product-info p {
+    font-size: 19px !important;
+  }
+  .grid-container .price-product-cart, .grid-container .price-summary {
+    font-size: 24px !important;
   }
   .grid-container .payment-methods > img {
     width: 70px !important;

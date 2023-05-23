@@ -144,6 +144,7 @@
   #product-price {
     display: flex;
     flex-direction: column;
+    margin-top: 10px !important;
 
     span {
       font-size: 28px !important;
@@ -212,9 +213,9 @@
   }
 
   #product-img img {
-    width: 250px;
-    height: 250px;
-    margin: 0px;
+    width: 280px !important;
+    margin: 20px !important;
+
   }
   
   #selector-product {
@@ -239,11 +240,27 @@
          
   /*carrito*/
   .grid-container {
-    padding: 0 15px;
+    padding: 15px;
+
+    .product-cart{
+      padding: 0 15px !important;
+
+      .product-img img {
+        margin: 20px;
+      }
+
+      .product-info p {
+        font-size: 19px !important;
+      } 
+    }
+
+    .price-product-cart,.price-summary {
+      font-size: 24px !important;    
+    }
 
     .payment-methods>img {
       width:70px !important;   
-    }   
-  }
+    } 
+  }        
 }
 
